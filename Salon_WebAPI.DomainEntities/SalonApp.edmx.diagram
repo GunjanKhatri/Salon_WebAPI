@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1862bc5da1e74f978ebc0ff9b00f20d1" Name="Diagram1">
+        <EntityTypeShape EntityType="SalonAppModel.BookingDetail" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalonAppModel.Role" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalonAppModel.ServiceCategory" Width="1.5" PointX="0.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalonAppModel.Service" Width="1.5" PointX="3" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalonAppModel.UserDetail" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalonAppModel.UserRolesMapping" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalonAppModel.User" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <AssociationConnector Association="SalonAppModel.FK__BookingDe__Servi__34C8D9D1" ManuallyRouted="false" />
+        <AssociationConnector Association="SalonAppModel.FK__BookingDe__UserI__33D4B598" ManuallyRouted="false" />
+        <AssociationConnector Association="SalonAppModel.FK__UserRoles__RoleI__276EDEB3" ManuallyRouted="false" />
+        <AssociationConnector Association="SalonAppModel.FK__UserRoles__RoleI__286302EC" ManuallyRouted="false" />
+        <AssociationConnector Association="SalonAppModel.FK__Services__Servic__30F848ED" ManuallyRouted="false" />
+        <AssociationConnector Association="SalonAppModel.FK__UserDetai__UserI__2C3393D0" ManuallyRouted="false" />
+        <AssociationConnector Association="SalonAppModel.FK__UserRoles__UserI__29572725" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

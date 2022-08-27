@@ -5,6 +5,16 @@ VisualStudioVersion = 15.0.28307.1758
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Salon_WebAPI", "Salon_WebAPI\Salon_WebAPI.csproj", "{018521AB-BF17-44B5-AB06-0BF6C553050F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Salon_WebAPI.DomainEntities", "Salon_WebAPI.DomainEntities\Salon_WebAPI.DomainEntities.csproj", "{E8CA13A4-A784-48A5-8739-53233E97A003}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Salon_WebAPI.BusinessEntity", "Salon_WebAPI.BusinessEntity\Salon_WebAPI.BusinessEntity.csproj", "{82BFFF12-B19C-40BD-A9DE-9B1AAC801E75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Salon_WebAPI.Repository", "Salon_WebAPI.Repository\Salon_WebAPI.Repository.csproj", "{56FF1F37-0123-4B86-8E0D-AF6849A32472}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Salon_WebAPI.Service", "Salon_WebAPI.Service\Salon_WebAPI.Service.csproj", "{380B0BF1-ECBE-4A6C-BDAA-21141E3490DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Salon_WebAPI.Helper", "Salon_WebAPI.Helper\Salon_WebAPI.Helper.csproj", "{489880EE-CBA7-45C2-BF55-29F5D01EB044}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +25,26 @@ Global
 		{018521AB-BF17-44B5-AB06-0BF6C553050F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{018521AB-BF17-44B5-AB06-0BF6C553050F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{018521AB-BF17-44B5-AB06-0BF6C553050F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8CA13A4-A784-48A5-8739-53233E97A003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8CA13A4-A784-48A5-8739-53233E97A003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8CA13A4-A784-48A5-8739-53233E97A003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8CA13A4-A784-48A5-8739-53233E97A003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82BFFF12-B19C-40BD-A9DE-9B1AAC801E75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82BFFF12-B19C-40BD-A9DE-9B1AAC801E75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82BFFF12-B19C-40BD-A9DE-9B1AAC801E75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82BFFF12-B19C-40BD-A9DE-9B1AAC801E75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56FF1F37-0123-4B86-8E0D-AF6849A32472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56FF1F37-0123-4B86-8E0D-AF6849A32472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56FF1F37-0123-4B86-8E0D-AF6849A32472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56FF1F37-0123-4B86-8E0D-AF6849A32472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{380B0BF1-ECBE-4A6C-BDAA-21141E3490DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{380B0BF1-ECBE-4A6C-BDAA-21141E3490DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{380B0BF1-ECBE-4A6C-BDAA-21141E3490DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{380B0BF1-ECBE-4A6C-BDAA-21141E3490DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{489880EE-CBA7-45C2-BF55-29F5D01EB044}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{489880EE-CBA7-45C2-BF55-29F5D01EB044}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{489880EE-CBA7-45C2-BF55-29F5D01EB044}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{489880EE-CBA7-45C2-BF55-29F5D01EB044}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
