@@ -14,10 +14,7 @@ namespace Salon_WebAPI.Controllers
     public class LoginController : ApiController
     {
         public IUserService userService { get; set; }
-        public LoginController()
-        {
-
-        }
+       
         public LoginController(IUserService _userService)
         {
             userService = _userService;

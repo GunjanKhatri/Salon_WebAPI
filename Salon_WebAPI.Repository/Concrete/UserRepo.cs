@@ -12,19 +12,32 @@ namespace Salon_WebAPI.Repository.Concrete
 {
     public class UserRepo : IUserRepo
     {
+        SalonAppEntities salon; 
         public bool AddUser(User user)
         {
-            throw new NotImplementedException();
+            using (salon = new SalonAppEntities())
+            {
+                salon.Users.Add(user);
+                return salon.SaveChanges() > 0 ? true : false;
+            }
         }
 
         public bool AddUserDetails(UserDetail userDetail)
         {
-            throw new NotImplementedException();
+            using (salon = new SalonAppEntities())
+            {
+                salon.UserDetails.Add(userDetail);
+                return salon.SaveChanges() > 0 ? true : false;
+            }
         }
 
         public User GetUser(int userId)
         {
-            throw new NotImplementedException();
+            using (salon = new SalonAppEntities())
+            {
+                var result = salon.Users.Where(x => x.Id == userId).FirstOrDefault();
+                return result;
+            }
         }
 
         public ResponseVM UserLogin(User user)

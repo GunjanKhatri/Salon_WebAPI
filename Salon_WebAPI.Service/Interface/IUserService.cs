@@ -10,8 +10,8 @@ namespace Salon_WebAPI.Service.Interface
 {
     public interface IUserService
     {
-        bool AddUser(UserViewModel user);
-        bool AddUserDetails(UserDetailViewModel userDetail);
+        void AddUser(UserViewModel user);
+        void AddUserDetails(UserDetailViewModel userDetail);
         UserViewModel GetUser(int userId);
         ResponseVM UserLogin(UserViewModel user);
     }

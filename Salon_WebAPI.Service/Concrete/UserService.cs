@@ -18,26 +18,42 @@ namespace Salon_WebAPI.Service.Concrete
         {
             userRepo = _userRepo;
         }
-        public bool AddUser(UserViewModel user)
+        public void AddUser(UserViewModel userViewModel)
         {
-            throw new NotImplementedException();
+            var user = new User();
+            user.Username = userViewModel.UserName;
+            user.Password = userViewModel.Password;
+            userRepo.AddUser(user);
         }
 
-        public bool AddUserDetails(UserDetailViewModel userDetail)
+        public void AddUserDetails(UserDetailViewModel userDetailVM)
         {
-            throw new NotImplementedException();
+            var userDetail = new UserDetail();
+            userDetail.FirstName = userDetailVM.FirstName;
+            userDetail.LastName = userDetailVM.LastName;
+            userDetail.ContactNo = userDetailVM.ContactNo;
+            userDetail.EmailId = userDetailVM.EmailId;
+            //userDetail.UserId = userDetailVM.us
+            userRepo.AddUserDetails(userDetail);
         }
 
         public UserViewModel GetUser(int userId)
         {
-            throw new NotImplementedException();
+            var user = userRepo.GetUser(userId);
+            var userVM = new UserViewModel();
+            userVM.Id = user.Id;
+            userVM.UserName = user.Username;
+            userVM.Password = user.Password;
+
+            return userVM;
         }
 
         public ResponseVM UserLogin(UserViewModel userViewModel)
         {
             var user = new User();
+            user.Id = userViewModel.Id;
             user.Username = userViewModel.UserName;
-            user.Password = userViewModel.Paswword;
+            user.Password = userViewModel.Password;
             return userRepo.UserLogin(user);
         }
     }
